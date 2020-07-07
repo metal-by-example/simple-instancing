@@ -4,7 +4,7 @@ This is an extremely basic demonstration of instanced drawing, including how to 
 
 ## Usage
 
-In Bridging-Header.h, set `USE_VERTEX_DESCRIPTOR` to 1 or 0, to enable or disable vertex descriptors respectively.
+In Bridging-Header.h, set `USE_VERTEX_DESCRIPTOR` to 1 or 0, to enable or disable vertex descriptors respectively.  
 Build and run
 
 ## Screenshot
@@ -13,5 +13,5 @@ Build and run
 
 ## Requirements
 
-Xcode 11 or newer
+Xcode 11 or newer  
 macOS 10.15 Catalina or newer
