@@ -102,7 +102,9 @@ class Renderer : NSObject, MTKViewDelegate {
         
         instanceBuffers = []
         for _ in 0..<Renderer.maxFramesInFlight {
-            if let buffer = device.makeBuffer(length: Shape.instanceDataLength, options: [.storageModeShared]) {
+            if let buffer = device.makeBuffer(length: Shape.instanceDataLength * scene.shapes.count,
+                                              options: [.storageModeShared])
+            {
                 instanceBuffers.append(buffer)
             }
         }
